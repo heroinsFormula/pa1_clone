@@ -3,9 +3,13 @@
 
 int main () {
     int quote_index;
-
+    char test;
     printf("ml' nob:\n");
-    if (scanf("%d", &quote_index) != 1) {
+    int return_val = scanf("%d %c", &quote_index, &test); // consumes an extra char to check for inputs like 1abc
+    if (return_val == 2) {
+        printf("bIjatlh 'e' yImev\n");
+        return EXIT_FAILURE;
+    } else if (return_val != 1) {
         printf("Neh mi'\n");
         return EXIT_FAILURE;
     } else if (quote_index > 8 || quote_index < 0) {
