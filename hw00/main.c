@@ -4,7 +4,7 @@
 int main () {
     int quote_index;
     printf("ml' nob:\n");
-    int return_val = scanf("%d %c", &quote_index); // consumes an extra char to check for inputs like 1abc
+    int return_val = scanf("%d %*c", &quote_index); // consumes an extra char to check for inputs like 1abc
     if (return_val == 2) {
         printf("bIjatlh 'e' yImev\n");
         return EXIT_FAILURE;
