@@ -33,7 +33,7 @@ int main() {
   }
 
   if (result - c != 0) {
-    printf("%.2lf != %.2lf\n", result, c);
+    printf("%g != %g\n", result, c); // 3.990 and 4.00 converted to 3.99 and 4 respectively
     return EXIT_FAILURE;
   }
 
