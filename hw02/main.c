@@ -26,6 +26,10 @@ int main() {
   } else if (oper == '*') {
     result = a*b;
   } else if (oper == '/') {
+    if (b == 0) {
+      printf("Nespravny vstup.\n");
+      return EXIT_FAILURE;
+    }
     result = floor(a/b); // we want integer division
   } else {
     printf("Nespravny vstup.\n");
