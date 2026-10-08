@@ -36,7 +36,8 @@ int main() {
     return EXIT_FAILURE;
   }
 
-  if (result - c != 0) {
+
+  if (fabs(a - b) <= __DBL_EPSILON__*(fabs(a) + fabs(b))) {
     printf("%g != %g\n", result, c); // 3.990 and 4.00 converted to 3.99 and 4 respectively
     return EXIT_FAILURE;
   }
